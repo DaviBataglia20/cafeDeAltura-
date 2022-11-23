@@ -78,6 +78,7 @@ header{
     line-height: 16px;
 }
 .sesion{
+    cursor: pointer;
     padding: 12px 24px;
     background-color: #515051;
     border-radius: 4px;
@@ -88,6 +89,7 @@ header{
     line-height: 16px;
 }
 .bolsa{
+   cursor: pointer;
    width: 24px;
    height: 24px;
    
@@ -130,6 +132,7 @@ header{
     gap:16px;
 }
 .buttons-desc>button{
+    cursor: pointer;
     padding:12px 24px;
     font-weight: 600;
     font-size: 14px;
@@ -204,4 +207,12 @@ h2{
     font-size: 14px;
     line-height: 16px;
     color:#111827;
+}
+.novedades{
+    padding: 40px;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
