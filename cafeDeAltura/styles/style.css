@@ -388,6 +388,50 @@ color: #FFFFFF;
     padding: 0px;
     gap: 16px;
 }
-
-
-
+                                     /*UBICACION*/
+.ubicacion{
+    padding: 44px 40px;
+    background: #F7F5F3;
+}
+.fotoTexto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
+.textosUbi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+.textosUbi>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+.textosUbi>h2{
+    color: #2A5B45;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.textosUbi>div>a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-decoration-line: underline;
+}
+.textosUbi>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111827;
+}
+                                     /*UBICACION*/
