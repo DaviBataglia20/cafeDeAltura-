@@ -96,7 +96,7 @@ header{
    
 }
                                 /* CABECERA */
-                                
+                /*-----------------------------------------------*/                                
                                 /* DESCRIPCION DEL CAFE */
 .description-coffee1{
     padding: 48px 40px;
@@ -157,7 +157,7 @@ header{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
                                 /* DESCRIPCION DEL CAFE */
-
+                /*-----------------------------------------------  */
                                 /* CONDICIONES */
 .blur{
     background-image:url(/cafeDeAltura/assets/images/cafe-fondo.jfif);
@@ -216,7 +216,7 @@ h2{
     color:#111827;
 }
                                 /* CONDICIONES */
-
+                /*-----------------------------------------------  */
                                 /* NOVEDADES */
 .novedades{
     padding: 40px;
@@ -316,7 +316,7 @@ h2{
     text-shadow: 0px 2px 3px #CACACA;
 }
                                 /* NOVEDADES */
-
+                /*-----------------------------------------------  */
                                 /* FAQ */
 .faq{
     background-color: #2A5B45;
@@ -369,11 +369,9 @@ line-height: 16px;
 text-decoration-line: underline;
 color: #FFFFFF;
 }
-                                    /* FAQ */
-.ubicacion{
-    background: #F7F5F3;
-    padding: 45px 40px;
-}
+                                /* FAQ */
+                /*-----------------------------------------------  */
+                                /* UBICACION */
 .fotoTexto{
     display: flex;
     flex-direction: row;
@@ -388,7 +386,6 @@ color: #FFFFFF;
     padding: 0px;
     gap: 16px;
 }
-                                     /*UBICACION*/
 .ubicacion{
     padding: 44px 40px;
     background: #F7F5F3;
@@ -434,4 +431,41 @@ color: #FFFFFF;
     line-height: 16px;
     color: #111827;
 }
-                                     /*UBICACION*/
+                                /* UBICACION */
+                /*-----------------------------------------------  */
+                                /* FORMULARIO */
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    background-color: #E3DED7;
+}
+.formulario1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    background: #E3DED7;
+    opacity: 0.9;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.formText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+.cabeceraForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+}
+                                /* FORMULARIO */
+                /*-----------------------------------------------  */
