@@ -6,6 +6,7 @@
     font-family: 'Outfit', sans-serif;
     box-sizing: border-box;
 }
+                                /* CABECERA */
 header{
     width: 100%;
     background-color: #2B2A2B;
@@ -94,6 +95,9 @@ header{
    height: 24px;
    
 }
+                                /* CABECERA */
+                                
+                                /* DESCRIPCION DEL CAFE */
 .description-coffee1{
     padding: 48px 40px;
 }
@@ -152,6 +156,9 @@ header{
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+                                /* DESCRIPCION DEL CAFE */
+
+                                /* CONDICIONES */
 .blur{
     background-image:url(/cafeDeAltura/assets/images/cafe-fondo.jfif);
     background-position: center;
@@ -208,6 +215,9 @@ h2{
     line-height: 16px;
     color:#111827;
 }
+                                /* CONDICIONES */
+
+                                /* NOVEDADES */
 .novedades{
     padding: 40px;
     background-color:white;
@@ -305,3 +315,79 @@ h2{
     line-height: 16px;
     text-shadow: 0px 2px 3px #CACACA;
 }
+                                /* NOVEDADES */
+
+                                /* FAQ */
+.faq{
+    background-color: #2A5B45;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0px;
+    gap: 24px;
+}
+.faq>h2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.preguntasjuntas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:0px;
+    gap: 16px;  
+}
+.carta-pregunta{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 668px;
+}
+.h3-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+.linea{
+    border: 1px solid #E3DED7;
+}
+.resolution{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+text-decoration-line: underline;
+color: #FFFFFF;
+}
+                                    /* FAQ */
+.ubicacion{
+    background: #F7F5F3;
+    padding: 45px 40px;
+}
+.fotoTexto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
+.fotoTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+
+
