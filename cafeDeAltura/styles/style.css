@@ -451,13 +451,12 @@ color: #FFFFFF;
     gap: 24px;
     background: #E3DED7;
     opacity: 0.9;
-    transform: matrix(1, 0, 0, -1, 0, 0);
 }
 .formText{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 116px 0px;
     gap: 32px;
 }
 .cabeceraForm{
@@ -466,6 +465,230 @@ color: #FFFFFF;
     align-items: flex-start;
     padding: 0px;
     gap: 12px;
+}
+.cabeceraForm>h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111827;
+}
+.cabeceraForm>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6B7280;
+}
+.otrosTextosForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+.otrosTextosForm>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6B7280;
+}
+.ubicacionForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6B7280;
+}
+.telefonoEmailForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6B7280;
+}
+.telefonoEmailForm>div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+}
+.otrosTextosForm>p>a{
+    font-weight: 600;
+    color: #000000;
+}
+.mainForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cajaForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    padding: 32px 67px 32px 67px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 100%;   
+
+}
+.name>label{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #374151;
+}
+.name>input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 13px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+.tel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 100%;
+}
+.tel>label{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #374151;
+}
+.telefonoMainForm{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    width: 100%;
+}
+.telefonoMainForm>select{
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border:0;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 13px;
+    gap: 4px;
+    background: #FFFFFF;
+}
+.telefonoMainForm>input{
+    border:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 13px 9px 0px;
+}
+select>option{
+    color:#000000;
+}
+.help{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 100%;
+}
+.help>textarea{
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px; 
+    width: 100%;
+    height: 142px;
+    position: relative;
+}
+textarea::placeholder{
+    position: absolute;
+    width: 176px;
+    height: 16px;
+    left: 17px;
+    top: 13px;
+    color: #6B7280;
+
+}
+.terms{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    gap: 12px;
+}
+.terms>input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;  
+}
+.textospoli{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap:3px;
+    width: 442px;
+}
+.textospoli>p{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #374151;
+}
+.textospoli>a{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+.butonForm{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px; 
+    background: #2A5B45;
+    border-radius: 4px;
+    color: #FFFFFF;
+    border: 0;
 }
                                 /* FORMULARIO */
                 /*-----------------------------------------------  */
