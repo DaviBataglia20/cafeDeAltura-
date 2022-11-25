@@ -435,6 +435,7 @@ color: #FFFFFF;
                 /*-----------------------------------------------  */
                                 /* FORMULARIO */
 .formulario{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -548,6 +549,14 @@ color: #FFFFFF;
     width: 100%;   
 
 }
+.name>input:hover{
+    border: 1px solid #9B9EA3;
+}
+.name>input:focus{
+    outline: none !important;
+    border: 2px solid #3F8F6B;
+    border-radius: 6px;
+}
 .name>label{
     font-weight: 400;
     font-size: 12px;
@@ -591,6 +600,14 @@ color: #FFFFFF;
     border-radius: 6px;
     width: 100%;
 }
+.telefonoMainForm:hover{
+    border: 1px solid #9B9EA3;
+}
+.telefonoMainForm>input:focus{
+    outline: none !important;
+    border: 2px solid #3F8F6B;
+    border-radius: 6px;
+}
 .telefonoMainForm>select{
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border:0;
@@ -608,6 +625,7 @@ color: #FFFFFF;
     flex-direction: row;
     align-items: center;
     padding: 9px 13px 9px 0px;
+    width: 100%;
 }
 select>option{
     color:#000000;
@@ -638,6 +656,10 @@ textarea::placeholder{
     color: #6B7280;
 
 }
+textarea:hover{
+    border: 1px solid #9B9EA3;
+}
+t
 .terms{
     display: flex;
     flex-direction: row;
@@ -680,6 +702,7 @@ textarea::placeholder{
     color: #000000;
 }
 .butonForm{
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -691,4 +714,129 @@ textarea::placeholder{
     border: 0;
 }
                                 /* FORMULARIO */
+                /*-----------------------------------------------  */
+                                /* PIE DE PAGINA */
+.pie-de-pagina{
+    box-sizing: border-box;
+    background: #1F1815;
+    position: relative;
+    width: 1280px;
+}
+.mainFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 40px 77px 40px; 
+    gap: 16px;
+}
+.pieLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 7.33px;
+}
+.pieLogo>p{
+    font-weight: 400;
+    font-size: 23.4628px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.enlacesPie{
+    box-sizing: border-box;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 1132px;
+    
+}
+.enlacesPie>div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;  
+
+}
+.enlacesPie>div:nth-of-type(1)>h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.enlacesPie>div:nth-of-type(1)>button{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    background: #515051;
+    border-radius: 4px;
+    border:0;
+}
+.enlacesPie>div:nth-of-type(1)>button>p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color:#FFFFFF;
+    display: flex;
+    align-self: cen;
+}
+.enlacesPie>div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+.enlacesPie>div:nth-of-type(2)>p{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.enlacesPie>div:nth-of-type(3){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 255.33px;
+    height: 80px;
+    position: relative;
+    right: 120px;
+}
+.enlacesPie>div:nth-of-type(3)>p{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.secondFooter{
+    position: absolute;
+    width: 1280px;
+    height: 40px;
+    left: 0px;
+    bottom: -0.34px;
+    background: #2B2A2B;
+}
+.secondFooter>p{
+    position: absolute;
+width: 359px;
+height: 16px;
+left: 540.5px;
+top: 12px;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+color: #FFFFFF;
+}
+                                /* PIE DE PAGINA */
                 /*-----------------------------------------------  */
