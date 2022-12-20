@@ -100,6 +100,7 @@ header{
                                 /* DESCRIPCION DEL CAFE */
 .description-coffee1{
     padding: 48px 40px;
+    background-color: rgba(227, 222, 215, 0.3);
 }
 .mainContD-C{
     display: flex;
@@ -431,6 +432,10 @@ color: #FFFFFF;
     line-height: 16px;
     color: #111827;
 }
+
+input[type="checkbox"]{
+    accent-color: green;
+}
                                 /* UBICACION */
                 /*-----------------------------------------------  */
                                 /* FORMULARIO */
@@ -659,7 +664,7 @@ textarea::placeholder{
 textarea:hover{
     border: 1px solid #9B9EA3;
 }
-t
+
 .terms{
     display: flex;
     flex-direction: row;
