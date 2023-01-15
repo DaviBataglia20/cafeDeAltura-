@@ -768,7 +768,9 @@ textarea:hover{
     box-sizing: border-box;
     background: #1F1815;
     position: relative;
+    top:260px;
     width: 1280px;
+    height: auto;
 }
 .mainFooter{
     display: flex;
@@ -866,11 +868,11 @@ textarea:hover{
     color: #FFFFFF;
 }
 .secondFooter{
-    position: absolute;
+    position:absolute;
     width: 1280px;
     height: 40px;
     left: 0px;
-    bottom: -0.34px;
+    bottom: 0px;
     background: #2B2A2B;
 }
 .secondFooter>p{
@@ -888,3 +890,379 @@ color: #FFFFFF;
 }
                                 /* PIE DE PAGINA */
                 /*-----------------------------------------------  */
+                                /* MAIN CARRITO */
+.carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 24px;
+    width: 1280px;
+    height: 772px;
+}
+.carrito>h2{
+    font-weight: 500;
+    font-size: 24px;
+    color: #2A5B45;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.carritoMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 1200px;
+    height: 415.32px;
+}
+.productoMain{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 776px;
+}
+.producto{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 776px;
+    height: 55.66px;
+}
+.contador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 88px;
+    height: 55.66px;
+}
+.producto>button{
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 24px;
+    height: 24px;
+    background: rgba(42, 91, 69, 0.1);
+    border-radius: 200px;
+}
+.cont>p{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color:var(--form-control-color)
+}
+.detallesCafe{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 506.34px;
+    height: 36px;
+}
+.detallesCafe>p:first-child{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+.detallesCafe>p:last-child{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.precioCafe{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;   
+    gap: 8px;
+    width: 54px;
+    height: 24px;
+}
+.precioCafe>p{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+.productosYEnvio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 24px;
+    width: 792px;
+    height: 415.32px;
+}
+.productosYEnvio>h3{
+   font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+.envio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 776px;
+    height: 36px;
+}
+:root {
+    --form-control-color: #2A5B45;
+  }
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #2A5B45;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+input[type="radio"]::before {
+    content: "";
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+.textTipoEnvio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 657px;
+    height: 36px;
+}
+.textTipoEnvio>h2{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+.textTipoEnvio>p{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.precioDeEnvio>h3{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.precioTotal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    width: 384px;
+    height: 280px;
+    background: #F7F5F3;
+
+}
+.precioTotalMain{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 336px;
+    height: 176px;
+}
+.precioTotalMain>h3{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.subTotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 336px;
+    height: 16px;
+}
+.subTotal>p:first-child{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.subTotal>p:last-child{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+.envioTotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 336px;
+    height: 16px;
+}
+.envioTotal>p:first-child{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.envioTotal>p:last-child{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+.totalTotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 336px;
+    height: 40px;
+}
+.totalTotal>p{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+.totalTotal>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 8px;
+    width: 107px;
+    height: 40px;
+}
+.totalTotal>div>p:first-child{
+    width: 48px;
+    height: 16px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+.totalTotal>div>p:last-child{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+.botonesPrecioTotal{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 310px;
+    height: 40px;
+}
+.botonesPrecioTotal>button:first-child{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 129px;
+    height: 40px;
+    background: #2A5B45;
+    border:0;
+    border-radius: 4px;
+    
+}
+.botonesPrecioTotal>button:first-child>a{
+    text-decoration: none;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.botonesPrecioTotal>button:last-child{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 165px;
+    height: 40px;
+    border:0;
+    border-radius: 4px;
+    background: #F7F5F3;
+    
+}
+.botonesPrecioTotal>button:last-child>a{
+    text-decoration: none;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A5B45;
+}

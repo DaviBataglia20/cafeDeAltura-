@@ -36,35 +36,81 @@
     </header>
                             <!-- CABECERA -->
             <!-- ------------------------------------------------- --> 
-                                <!-- PIE DE PAGINA -->
-    <div><h1>a</h1>
-    <h1>b</h1>
-    <h1>c</h1>
-    <h1>d</h1>
-    <h1>e</h1>
-    <h1>f</h1>
-    <h1>g</h1>
-    <h1>h</h1>
-    <h1>i</h1>
-    <h1>j</h1>
-    <h1>k</h1>
-    <h1>l</h1>
-    <h1>m</h1>
-    <h1>n</h1>
-    <h1>s</h1>
-    <h1>r</h1>
-    <h1>g</h1>
-    <h1>y</h1>
-    <h1></h1>
-    <h1></h1>
+                            <!-- MAIN -->
+    <div class ="carrito">
+        <h2>Cesta ( <span class ="cestaNum">0</span> )</h2>
+        <div class="carritoMain">
+            <div class = "productosYEnvio">
+                <h3>Productos</h3>
+                <div class="productoMain">
+
+                </div>
+                
+                <h3>Seleccionar envío</h3>
+                <div class="envio" >
+                    <input class="botonCarritoEnvio"  type="radio"  name="tipoDeEnvio" id="gratis" value = "gratis">
+                    <div class ="textTipoEnvio">
+                        <h2>Envío 5-7 días</h2>
+                        <p>Opción estándar sin seguimiento</p>
+                    </div>
+                    <div class ="precioDeEnvio">
+                        <h3>GRATIS</h3>
+                    </div>
+                </div>
+                <div class="barritaDivision">
+                    <img src="/cafeDeAltura/assets/icons/DividerbarritaDivision.png" alt="barraDivisio">
+                </div>
+                <div class="envio" >
+                    <input class="botonCarritoEnvio"  type="radio"  name="tipoDeEnvio" id="pago" value = "pago">
+                    <div class ="textTipoEnvio">
+                        <h2>Envío urgente 24h </h2>
+                        <p>Recibe tu pedido en las siguientes 24h (Para pedidos realizados antes de las 13:00).</p>
+                    </div>
+                    <div class ="precioDeEnvio">
+                        <h3>9,00 €</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class = "precioTotal">
+                <div class = "precioTotalMain">
+                    <h3>Total del carrito</h3>
+                    <img src="/cafeDeAltura/assets/icons/DividerdivisionMasPequeña.png" alt="" srcset="">
+                    <div class = "subTotal">
+                        <p>SUBTOTAL</p>
+                        <p>0,00 €</p>
+                    </div>
+                    <div class = "envioTotal">
+                        <p>ENVÍO</p>
+                        <p>GRATIS</p>
+                    </div>
+                    <img src="/cafeDeAltura/assets/icons/DividerdivisionMasPequeña.png" alt="">
+                    <div class = "totalTotal">
+                        <p>TOTAL</p>
+                        <div>
+                            <p>0,00 €</p>
+                            <p>Incluye 3,78€ de IVA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "botonesPrecioTotal">
+                    <button><a href="">Ir a checkout</a></button>
+                    <button><a href="">Seguir comprando</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+                            <!-- MAIN -->
+            <!-- ------------------------------------------------- --> 
+                            <!-- PIE DE PAGINA -->
 </div>
-    <footer class="pie-de-pagina">
+<footer class="pie-de-pagina">
                                     <div class="secondFooter">
                                         <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
                                     </div>
-    </footer>
+</footer>
                                 <!-- PIE DE PAGINA --> 
             <!-- --------------------------------------------------->
-    
+    <script src="/cafeDeAltura/script/cesta.js"></script>
 </body>
 </html>
