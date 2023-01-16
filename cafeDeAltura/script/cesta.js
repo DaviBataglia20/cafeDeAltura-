@@ -49,11 +49,17 @@ for (i = 0; i < botones.length; i++) {
     });
 }
 
+/* CANTIDAD EN EL ICONO CESTA */
+if(JSON.parse(localStorage.getItem('carrito'))){
+    cicrculitoCanti = document.createElement("div")
+    cicrculitoCanti.innerHTML =`<p>${carrito.length}</p>`
+    divBolsa = document.querySelector("header>.bolsa")
+    divBolsa.append(cicrculitoCanti)
+}
 
 /* CANTIDAD EN LA CESTA */
 const cestaCantidad = document.querySelector(".carrito>h2")
-let carritoNum = carrito.length;
-cestaCantidad.innerHTML = `Cesta (${carritoNum})`
+cestaCantidad.innerHTML = `Cesta (${carrito.length})`
 
                 /* TODO BIEN HASTA AQUI */
 
@@ -61,18 +67,16 @@ cestaCantidad.innerHTML = `Cesta (${carritoNum})`
 /* OBTENER LOS BOTONES DE SUMAR CANTIDAD */
 const botonSumar = document.querySelectorAll("#sumar")
 const botonRestar = document.querySelectorAll("#restar")
-const precioCoffe = document.querySelector(".precioCafe>p").innerHTML
-const cestaNum = document.querySelector(".sesion")
 botonRestar.forEach((boton,i) =>{  
     boton.addEventListener("click",()=>{
         if(Number(boton.nextElementSibling.childNodes[0].innerText) > 1){
             boton.nextElementSibling.childNodes[0].innerText--
             let cantidadProdu = Number(boton.nextElementSibling.childNodes[0].innerText)
-            console.log(cantidadProdu)
             const nameCafe = boton.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.children[0].innerText
             let indexCanti = carrito.findIndex(ele => ele.name === nameCafe)
             carrito[indexCanti].quantity--
             localStorage.setItem("carrito",JSON.stringify(carrito))
+            location.reload()
         }else{
             boton.parentElement.remove()
             const nameCafe = boton.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.children[0].innerText
@@ -82,48 +86,41 @@ botonRestar.forEach((boton,i) =>{
             let filtrarCarrito = carrito.filter((e)=>e.name !== nameCafe)
             carrito = filtrarCarrito;
             cestaCantidad.innerHTML = `Cesta (${carrito.length})`
+            location.reload()
         }
     })
 
 })
 botonSumar.forEach(boton =>{
     boton.addEventListener("click",()=>{
-        boton.nextElementSibling.childNodes[0].innerText++
+        boton.previousElementSibling.childNodes[0].innerText++
+        const nameCafe = boton.nextElementSibling.nextElementSibling.children[0].innerText
+        let indexCanti = carrito.findIndex(ele => ele.name === nameCafe)
+        carrito[indexCanti].quantity++
+        localStorage.setItem("carrito",JSON.stringify(carrito))
+        location.reload()
     })
-})
+    })
 
 
-
-arrPrecioCada = []
-carrito.forEach(precioP =>{
-    arrPrecioCada.push(precioP.price.match(/\d/g).join('') / 100)
-})
-
-function añadirArray (carrito){
-    
-
-}
 arrCantidad = [];
 carrito.forEach(product =>{
     arrCantidad.push(product.quantity)
 })
-console.log(arrCantidad,arrPrecioCada)
-
-let preciosMultiplicados = [];
-
-for(i = 0 ; i < arrCantidad.length;i++){
-    preciosMultiplicados.push()
-}
-/* PRECIO SUB-TOTAL Y TOTAL */
-const valores = []; 
-carrito.forEach(precio => {
-    valores.push(parseInt(precio.price))
+arrPrecioCada = []
+carrito.forEach(precioP =>{
+    arrPrecioCada.push(precioP.price.match(/\d/g).join('') / 100)
 })
-precioSubTotal = 0;
-for (i = 0; i < valores.length; i++) {
-    precioSubTotal += valores[i]
+console.log(arrCantidad,arrPrecioCada)
+let preciosMultiplicados = [];
+for(i = 0 ; i < arrCantidad.length;i++){
+    precioMultiplicado = arrPrecioCada[i] * arrCantidad[i];
+    preciosMultiplicados.push(precioMultiplicado)
 }
+console.log(preciosMultiplicados)
 
+
+const precioSubTotal = preciosMultiplicados.reduce((total, n) => total + n, 0);
 
 
 

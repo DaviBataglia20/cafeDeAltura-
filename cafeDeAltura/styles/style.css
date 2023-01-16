@@ -29,7 +29,7 @@ header{
     order: 0;
     flex-grow: 0;
 }
-.logo>p{
+.logo>p>a{
     font-style: normal;
     font-weight: 400;
     font-size: 23.4628px;
@@ -38,6 +38,8 @@ header{
     flex: none;
     order: 0;
     flex-grow: 0;
+    text-decoration: none;
+    color:#fff;
 }
 .wrapper{
     display: flex;
@@ -90,10 +92,26 @@ header{
     line-height: 16px;
 }
 .bolsa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 56px;
+    height: 24px;
    cursor: pointer;
-   width: 24px;
-   height: 24px;
-   
+}
+.bolsa>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #403E3F;
+    border-radius: 50%;
+}
+.bolsa>div>p{
+    color: #fff;
 }
 .wrapper-invisible{
     display: flex;
@@ -165,6 +183,10 @@ header{
 }
 .buttons-desc>button:last-child{
     background-color: #2A5B45;
+}
+.buttons-desc>button>a{
+    text-decoration: none;
+    color: #fff;
 }
 .mainContD-C>img{
     border-radius: 20px;
@@ -769,7 +791,7 @@ textarea:hover{
     background: #1F1815;
     position: relative;
     top:260px;
-    width: 1280px;
+    width: 100%;
     height: auto;
 }
 .mainFooter{
@@ -869,7 +891,7 @@ textarea:hover{
 }
 .secondFooter{
     position:absolute;
-    width: 1280px;
+    width: 100%;
     height: 40px;
     left: 0px;
     bottom: 0px;

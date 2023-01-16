@@ -15,8 +15,7 @@ botones.forEach(boton =>{
             name:`${cafeName}`,
             price:`${cafePrice}`,
         }
-        
-
+    
         if(carrito.find(e=>e.name === cafe.name)){
             let i = carrito.indexOf(carrito.find(e=>e.name === cafe.name))
             carrito[i].quantity += 1;
@@ -25,6 +24,20 @@ botones.forEach(boton =>{
             carrito.push(cafe)
             localStorage.setItem("carrito",JSON.stringify(carrito))
         }
-        
+        location.reload()
+    })
+})
+if(JSON.parse(localStorage.getItem('carrito'))){
+    cicrculitoCanti = document.createElement("div")
+    cicrculitoCanti.innerHTML =`<p>${carrito.length}</p>`
+    divBolsa = document.querySelector("header>.bolsa")
+    divBolsa.append(cicrculitoCanti)
+}
+const flechaAbriCerrar = document.querySelectorAll("#flechaArriba")
+console.log(flechaAbriCerrar)
+flechaAbriCerrar.forEach(flecha =>{
+    flecha.addEventListener("click",(i)=>{
+        const cartaPregunta = flecha.parentElement.parentElement
+        const textoPregunta = fleca.parentElement.nextElementSibling.nextElementSibling
     })
 })
