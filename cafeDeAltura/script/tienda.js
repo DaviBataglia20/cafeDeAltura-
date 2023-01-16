@@ -37,7 +37,22 @@ const flechaAbriCerrar = document.querySelectorAll("#flechaArriba")
 console.log(flechaAbriCerrar)
 flechaAbriCerrar.forEach(flecha =>{
     flecha.addEventListener("click",(i)=>{
-        const cartaPregunta = flecha.parentElement.parentElement
-        const textoPregunta = fleca.parentElement.nextElementSibling.nextElementSibling
+        flecha.classList.toggle('rotate')
+        const textoPregunta = flecha.parentElement.nextElementSibling.nextElementSibling
+        textoPregunta.classList.toggle("hiddenText")
+        const linhazinha = flecha.parentElement.nextElementSibling
+        linhazinha.classList.toggle("hiddenDiv")
+        linhazinha.classList.remove("linea")
+        
+
     })
+})
+const formularioinput = document.querySelector("#tel")
+formularioinput.addEventListener("focus",()=>{
+    const borderForm = document.querySelector(".tel>div")
+    borderForm.classList.add("borderNuevo")
+})
+formularioinput.addEventListener("focusout",()=>{
+    const borderForm = document.querySelector(".tel>div")
+    borderForm.classList.remove("borderNuevo")
 })

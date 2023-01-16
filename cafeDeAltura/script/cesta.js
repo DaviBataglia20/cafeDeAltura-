@@ -7,12 +7,11 @@ carrito.forEach(product => {
     const elCafe = document.createElement("div")
     elCafe.classList.add("producto")
     elCafe.innerHTML = `
-    <button id = "restar" ><img src="/cafeDeAltura/assets/icons/heroicons-outline_minus-smsubtraccion.png" alt=""></button>
     
+    <button id = "restar" ><img src="/cafeDeAltura/assets/icons/heroicons-outline_minus-smsubtraccion.png" alt=""></button>
     <div class = "cont"><p>1</p></div>
-
     <button id = "sumar"><img src="/cafeDeAltura/assets/icons/heroicons-outline_plus-smsumar.png" alt=""></button>
-    </div>
+    
     <div class = "imagenCafe">
     <img src="${product.img}" alt="${product.name}" style="width: 55.66px; height: 55.66px;">
     </div>
